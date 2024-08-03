@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+    overflow: hiddenz;
+}
+body{
+    background: linear-gradient(90deg, green 0%,  green 30%,whitesmoke 30%, whitesmoke 100%);
+}
+.contact_us{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contact_us .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.contact_us .title h2{
+    color: black;
+    font-weight: 500;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: white;
+    box-sizing: 0 5px 35px rgba(0,0,0,0.15);
+}
+.contact h3{
+    color: green;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.formbox{
+    position: relative;
+    width: 100%;
+}
+.formbox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formbox .row100 .inputbox{
+width: 100%;
+}
+.inputbox span{
+color: green;
+margin-top: 10px;
+margin-bottom: 5px;
+font-weight: 500;
+}
+.inputbox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+}
+.inputbox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+    resize: none;
+    min-height: 150px;
+    margin-bottom: 10px;
+}
+
+.inputbox input[type="submit"]{
+    background: green;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 14px 15px;
+
+}
+.inputbox::placeholder{
+    color: green;
+}
+.info{
+    background: green;
+}
+.info h3{
+    color: white;  
+}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infobox div span{
+    min-width: 40px;
+    height: 40px;
+    color: green;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.info .infobox div p{
+    color: white;
+}
+.info .infobox div a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.riddler{
+    margin-top: 40px;
+    display: flex;
+}
+
+.riddler li{
+    list-style: none;
+    margin-right: 15px;
+}
+.riddler li a{
+color: white;
+font-size: 2rem;
+}
+.riddler li a:hover{
+    transition: transform 0.3 ease;
+    transform: scale(1.1);
+    color: darkgoldenrod;
+}
+.map{
+    padding: 0
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:991px){
+body{
+    background: whitesmoke;
+}
+.contact_us{
+    padding: 20px;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "info"
+    "map" ;
+}
+.map{
+    min-height: 300px;
+    padding: 0;
+}
+.formbox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+.inputbox{
+    width: 100%;
+}
+.contact{
+    padding: 30px;
+}
+}
